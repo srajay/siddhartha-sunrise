@@ -1,0 +1,15 @@
+#container3D canvas {
+  text-align: center;
+  width: 800px !important;
+  height: 450px !important;
+  top: 0;
+  left: 0;
+  background-color: #dcdcddcc;
+  border: 1px solid var(--topfloor-base);
+  border-radius: 10px;
+  cursor: grab;
+}
+
+#container3D canvas:active {
+  cursor: grabbing;
+}
