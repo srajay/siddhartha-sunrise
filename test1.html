@@ -85,8 +85,8 @@
               class="offcanvas__top mb-40 d-flex justify-content-between align-items-center"
             >
               <div class="offcanvas__logo">
-                <a href="index.html">
-                  <img src="assets/imgs/logo/logo-footer.png" alt="Header Logo" />
+                <a href="dashboard.html">
+                  <img src="assets/imgs/logo/logo.png" alt="Header Logo" />
                 </a>
               </div>
               <div class="offcanvas__close">
@@ -265,165 +265,272 @@
       <!-- product detail start -->
       <section class="about-2-section p-relative fix section-space">
         <div class="small-container">
-          <div class="row product-detail mt-40">
-            <!-- Left Side: Product Images with Zoom and Thumbnails -->
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 product-images">
-              <div class="main-image-container">
-                <img src="assets/imgs/about/about-4.png" alt="Main Product Image" class="main-image" id="mainImage">
-                <div class="zoom-container" id="zoomContainer">
-                  <img src="assets/imgs/about/about-4.png" alt="Zoomed Product Image" class="zoom-image" id="zoomImage">
+          <div class="row">
+            <div
+              class="col-xxl-8 col-xl-8 col-lg-8 ps-2"
+              style="height: auto"
+            >
+            <!-- product intro start -->
+              <div class="product-intro d-flex gap-4 flex-wrap">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 left">
+                  <figure>
+                    <img src="./assets/imgs/about/about-1.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 right d-flex flex-column">
+                  <h4>Product Title</h4>
+                  <p class="mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Numquam earum delectus est nihil expedita facere id et,
+                    voluptas, blanditiis consequatur iste! Sint perspiciatis
+                    commodi rerum labore eum, pariatur officia tenetur?
+                  </p>
+
+                  <a
+                    href="/assets/pdf/Sunrise Company Profile.pdf"
+                    download="product-detail.pdf"
+                    >Download Product Detail</a
+                  >
+                  <a class="primary-btn-1 btn-hover mt-20" href="enquiry.html" >
+                      Enquiry<span
+                      class="icon-arrow-left"
+                    ></span
+                  >
+                  </a>
                 </div>
               </div>
-              <div class="thumbnail-images py-4 bg-body-tertiary">
-                <img src="assets/imgs/about/about-4.png" alt="Product Thumbnail" onclick="changeImage('assets/imgs/about/about-4.png')">
-                <img src="assets/imgs/about/about-3.png" alt="Product Thumbnail" onclick="changeImage('assets/imgs/about/about-3.png')">
-                <img src="assets/imgs/resources/service-tab-4.png" alt="Product Thumbnail" onclick="changeImage('assets/imgs/resources/service-tab-4.png')">
-                <img src="assets/imgs/footer/footer-4.png" alt="Product Thumbnail" onclick="changeImage('assets/imgs/footer/footer-4.png')">
-              </div>
-            </div>
-        
-            <!-- Right Side: Product Details -->
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 product-details">
-              <h1>Product Title</h1>
-              <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Numquam earum delectus est nihil expedita facere id et,
-                voluptas, blanditiis consequatur iste! Sint perspiciatis
-                commodi rerum labore eum, pariatur officia tenetur?</p>
-              <h2>Specifications</h2>
-              <ul style="list-style-type: disc;margin-left: 30px;">
-                <li>Highly Durable</li>
-                <li>Heat Insulation</li>
-                <li>Sound Insulation</li>
-                <li>Leakage Proof and wind Resistance</li>
-                <li>Fire – Retardant</li>
-                <li>Protection from UV radiation</li>
-              </ul>
-              <div class="product-btn mt-20">
-                <a class="primary-btn-1 btn-hover" style="width:200px" href="enquiry.html" >
-                  Enquiry<span
-                  class="icon-arrow-left"
-                ></span
-              >
-              </a>
-              <a
-                href="/assets/pdf/Product Details.pdf"
-                download="product-detail.pdf" class="primary-btn-1 btn-hover"
-                >Download Product Detail &nbsp; | <i class="fa-regular fa-arrow-down"></i>
-                <span
-                  class="icon-arrow-left"
-                ></span
-              >
-              </a>
+              <!-- product intro-end -->
 
-              </div>
- 
-            </div>
-          </div>
-
-          <div class="row toggle-tab mt-40 bg-body-tertiary py-4">
-            <div class="tab-buttons">
-              <button onclick="showSection('specification')" id="spec-btn" class="active">Specification</button>
-              <button onclick="showSection('technical-data')" id="tech-btn">Technical Data</button>
-              <button onclick="showSection('reviews')" id="rev-btn">Reviews</button>
-            </div>
-        
-            <!-- Specification and Reviews Content -->
-            <section id="specification" class="tab-content active">
-              <h2>Product Specifications</h2>
-              <ul>
-                <li>Highly Durable</li>
-                <li>Heat Insulation</li>
-                <li>Sound Insulation</li>
-                <li>Acid-Alkali Resistance</li>
-                <li>Leakage Proof and wind Resistance</li>
-                <li>Fire – Retardant</li>
-                <li>Electric Insulation</li>
-                <li>Protection from UV radiation</li>
-                <li>Environment friendly</li>
-                <li>Light Weight (5.5Kg – 6Kg per Mt. Sq.)</li>
-                <li>Non – Carcinogenic</li>
-                <li>High impact Resistance (Because of Glass Fiber Mesh Reinforced)</li>
-                <li>Rain Water Harvesting</li>
-              </ul>
-            </section>
-
-            <section id="technical-data" class="tab-content">
-              <h2>Technical Data</h2>
-              <ul style="list-style: none;">
-                <li><strong>Product Brand :</strong> SUNRISE BRAND UPVC ROOFING SHEET</li>
-                <li><strong>Product Name :</strong> 3mm UPVC Roofing Sheet with Double Glass Fiber Mesh Reinforced.</li>
-                <li><strong>Type :</strong>  Un-Plasticized Poly-vinyl Chloride</li>
-                <li><strong>Profile :</strong>  Tile / Corrugated Profile</li>
-                <li><strong>Product Colour :</strong> Top Colour – Terracotta, Blue, Dark Grey, Off White, Green <br/> : Bottom Colour - White</li>
-                <li><strong>Thickness :</strong> 3mm</li>
-                <li><strong>Weight :</strong> 5.5Kg - 6Kg per sq. meter</li>
-                <li><strong>Tensile Strength :</strong> 32 Mpa (For 3mm UPVC with Double Glass Fiber Mesh Reinforced)</li>
-                <li><strong>Load Carrying :</strong> 600mm – 210kg / 800mm – 140kg / 1000mm – 70kg</li>
-                <li><strong>Slop :</strong> 20 to 25 Degree</li>
-                <li><strong>Length :</strong> 12.2 ft., 14.4 ft., 16.6 ft., 18.8 ft. [Size can be Customized as per demand]</li>
-                <li><strong>Width :</strong> 41 Inch</li>
-                <li><strong>Coverage :</strong> Single Overlapping – 38 Inch <br/>: Double Overlapping – 32 Inch</li>
-                <li><strong>Fasten clip/ Screw :</strong> 4 to 5 sets of clip and screw per sq. meter.</li>
-                <li><strong>Purlins :</strong> Square Pipe is suggested</li>
-
-              </ul>
-            </section>
-        
-            <section id="reviews" class="tab-content">
-              <h2>Product Reviews</h2>
-              <p>No reviews yet. Be the first to review this product!</p>
-            </section>
-          </div>
-
-          <!-- image section start -->
-          <div class="row other-product mt-40">
-            
-            <div class="d-flex flex-wrap p-0">
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-3">
-                <a href="">
-                  <div class="card-content border p-3">
-                    <article>
-                      <div class="card-img" style="width:100%; height:300px">
-                        <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
-                      </div>
-                      
-                    </article>
+              <!-- product feature start -->
+              <div class="product-feature mt-40 d-flex flex-wrap column-gap-5 row-gap-3">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
                   </div>
-                </a>
-              </div>
-              <div
-              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-3"
-              >
-                <a href="">
-                  <div class="card-content border p-3">
-                    <article>
-                      <div class="card-img" style="width:100%; height:300px">
-                        <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
-                      </div>
-                      
-                    </article>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Highly Durable</h6>
                   </div>
-                </a>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5 class="text-secondary">Heat Insulation</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Sound Insulation</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Acid-Alkali Resistance</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Leakage Proof and wind Resistance
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Fire – Retardant</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Electric Insulation</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Non – Carcinogenic</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">High impact Resistance</h6>
+                  </div>
+                </div>
+
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 bg-body-tertiary px-4 py-4 d-flex gap-4 align-items-center">
+                  <div class="feature-icon px-4 py-3">
+                    <i class="bi bi-amd"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="text-secondary">Rain Water Harvesting</h6>
+                  </div>
+                </div>
+
               </div>
-              <div
-              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-3"
-              >
-                  <a href="">
-                    <div class="card-content border p-3">
-                      <article>
-                        <div class="card-img" style="width:100%; height:300px">
-                          <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
-                        </div>
-                        
-                      </article>
-                    </div>
-                  </a>
-              </div>
-              
+              <!-- product feature end -->
 
             </div>
+
+            <!-- technical data start -->
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 p-4 h-auto"
+              style="border: 2px solid #f2f2f2;"
+            >
+              <div class="product-specification">
+                <figure>
+                  <img
+                    height="100"
+                    src="./assets/imgs/about/about-1.jpg"
+                    alt=""
+                  />
+                </figure>
+                <h5 class="mt-20 mb-2">Technical Data</h5>
+                <hr />
+                <div
+                  class="technical-data mt-4"
+                  style="height: 400px; overflow-y: auto"
+                >
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Product Brand</h6>
+                    <p class="m-0 fs-5">SUNRISE BRAND UPVC ROOFING SHEET</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Product Name</h6>
+                    <p class="m-0 fs-5">
+                      3mm UPVC Roofing Sheet with Double Glass Fiber Mesh
+                      Reinforced.
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Product Type</h6>
+                    <p class="m-0 fs-5">Un-Plasticized Poly-vinyl Chloride</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Product Profile</h6>
+                    <p class="m-0 fs-5">Tile / Corrugated Profile</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Product Colour</h6>
+                    <p class="m-0 fs-5">
+                      Top Colour – Terracotta, Blue, Dark Grey, Off White, Green
+                      Bottom Colour - White
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Thickness</h6>
+                    <p class="m-0 fs-5">3mm</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Weight</h6>
+                    <p class="m-0 fs-5">5.5Kg - 6Kg per sq. meter</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Tensile Strength</h6>
+                    <p class="m-0 fs-5">
+                      32 Mpa (For 3mm UPVC with Double Glass Fiber Mesh
+                      Reinforced)
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Load Carrying</h6>
+                    <p class="m-0 fs-5">
+                      600mm – 210kg / 800mm – 140kg / 1000mm – 70kg
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Slop</h6>
+                    <p class="m-0 fs-5">20 to 25 Degree</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Length</h6>
+                    <p class="m-0 fs-5">
+                      12.2 ft., 14.4 ft., 16.6 ft., 18.8 ft. [Size can be
+                      Customized as per demand]
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Width</h6>
+                    <p class="m-0 fs-5">41 Inch</p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Coverage</h6>
+                    <p class="m-0 fs-5">
+                      Single Overlapping – 38 Inch <br />Double Overlapping – 32
+                      Inch
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Fasten clip/ Screw</h6>
+                    <p class="m-0 fs-5">
+                      4 to 5 sets of clip and screw per sq. meter.
+                    </p>
+                  </div>
+                  <div
+                    class="technical-data-card mb-4 py-2 px-4 bg-body-tertiary"
+                  >
+                    <h6 class="fs-3">Purlins</h6>
+                    <p class="m-0 fs-5">Square Pipe is suggested</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- technical data end -->
           </div>
-           <!-- image sectionend -->
 
           <!-- Other Product card  start -->
           <div class="row other-product mt-40">
@@ -495,19 +602,76 @@
                   </div>
                 </a>
               </div>
-              
+              <div
+              class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 p-3"
+              >
+                <a href="">
+                  <div class="card-content border p-3">
+                    <article>
+                      <div class="card-img" style="width:100%; height:200px">
+                        <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
+                      </div>
+                      <div class="card-text mt-20">
+                        <h6>Product name</h6>
+                        <p class="m-0 text-secondary fs-5">Category</p>
+                      </div>
+                    </article>
+                  </div>
+                </a>
+              </div>
+              <div
+              class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 p-3"
+              >
+                <a href="">
+                  <div class="card-content border p-3">
+                    <article>
+                      <div class="card-img" style="width:100%; height:200px">
+                        <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
+                      </div>
+                      <div class="card-text mt-20">
+                        <h6>Product name</h6>
+                        <p class="m-0 text-secondary fs-5">Category</p>
+                      </div>
+                    </article>
+                  </div>
+                </a>
+              </div>
+              <div
+              class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 p-3"
+              >
+                <a href="">
+                  <div class="card-content border p-3">
+                    <article>
+                      <div class="card-img" style="width:100%; height:200px">
+                        <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
+                      </div>
+                      <div class="card-text mt-20">
+                        <h6>Product name</h6>
+                        <p class="m-0 text-secondary fs-5">Category</p>
+                      </div>
+                    </article>
+                  </div>
+                </a>
+              </div>
+              <div
+              class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 p-3"
+              >
+                <a href="">
+                  <div class="card-content border p-3">
+                    <article>
+                      <div class="card-img" style="width:100%; height:200px">
+                        <img style="width:100%; height:100%; object-fit: cover;" src="./assets/imgs/about/about-3.png" alt="" />
+                      </div>
+                      <div class="card-text mt-20">
+                        <h6>Product name</h6>
+                        <p class="m-0 text-secondary fs-5">Category</p>
+                      </div>
+                    </article>
+                  </div>
+                </a>
+              </div>
               
             </div>
-            <div class="view-all-btn mt-20 d-flex justify-content-center align-items-center">
-              <a class="primary-btn-1 btn-hover" style="width:200px" href="products.html" >
-                View All Products<span
-                class="icon-arrow-left"
-              ></span
-            >
-            </a>
-
-            </div>
-            
           </div>
 
           <!-- other product card end -->
@@ -655,7 +819,6 @@
     <script src="assets/js/counterup.js"></script>
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/product-detail.js"></script>
     <script type="module" src="./assets/3D/3dmodel.js"></script>
   </body>
 </html>
