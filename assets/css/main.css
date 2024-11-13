@@ -1870,7 +1870,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .section-space-top {
   padding-top: 50px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4862,6 +4862,10 @@ p.banner-text {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   transition: height 0.3s ease;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-block .col-lg-4 figure:hover .overlay {
@@ -4871,12 +4875,38 @@ p.banner-text {
 .product-name {
   color: white;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 20px;
-  /* font-weight: 800; */
+  font-size: 30px;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.bg-primary {
+  background-color: var(--topfloor-base) !important;
+}
+
+.product-thumbnail {
+  height: 450px;
+}
+
+.product-value {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.product-value span {
+  font-weight: normal
+}
+
+.product-name span {
+  font-weight: bold;
+  margin-top: 50px;
+
 }
 
 .product-block .col-lg-4:hover .product-name {
@@ -4991,6 +5021,7 @@ p.banner-text {
   display: none;
   border: 1px solid #ddd;
   margin-left: 20px;
+  z-index: 9999;
 }
 
 .product-detail .zoom-image {
@@ -9323,4 +9354,111 @@ Animate wobble-vertical
     clip-path: inset(0 0 0 0);
     opacity: 1;
   }
+}
+
+
+
+/* Product Colors */
+.available-colors {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin-bottom: 16px;
+}
+
+.available-colors h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.color-list {
+  display: flex;
+  gap: 12px;
+  /* Space between color boxes */
+  flex-wrap: wrap;
+  /* Wrap colors in case of overflow */
+}
+
+.color-box {
+  width: 40px;
+  /* Size of the color box */
+  height: 40px;
+  border: 1px solid #ccc;
+  /* Border for clarity */
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: border 0.3s;
+}
+
+.color-box:hover {
+  border-color: #333;
+  /* Highlight on hover */
+}
+
+.color-box.selected {
+  border: 2px solid #000;
+  /* Selected border */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  /* Optional effect */
+}
+
+.color-box .checkmark {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  border-radius: 50%;
+  /* Circle */
+  display: none;
+}
+
+.color-box.selected .checkmark {
+  display: block;
+  /* Visible only for selected colors */
+}
+
+
+/* Product video */
+.product-video video {
+  border-radius: 20px;
+}
+
+.technical__data ul li span {
+  color: black;
+}
+
+.technical__data ul li ul {
+  list-style: none;
+  margin-left: 50px;
+}
+
+
+/* Project Single */
+.custom-badge {
+  background-color: var(--theme-color);
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+
+.gallery .images img {
+  width: 300px;
+  height: 300px;
+}
+
+.info h6 a {
+  word-break: break-word;
 }
