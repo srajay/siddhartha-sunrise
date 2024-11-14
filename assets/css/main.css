@@ -4896,11 +4896,13 @@ p.banner-text {
   padding: 10px;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
+  line-height: 30px;
 }
 
 .product-value span {
-  font-weight: normal
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .product-name span {
@@ -5307,6 +5309,7 @@ p.banner-text {
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: -1;
 }
 
 .testimonials-section .bg-shape-2 {
@@ -5317,6 +5320,7 @@ p.banner-text {
   height: 100%;
   background-repeat: no-repeat;
   background-position: top right;
+  z-index: -1;
 }
 
 .testimonials-section .bg-shape-3 {
@@ -9461,4 +9465,12 @@ Animate wobble-vertical
 
 .info h6 a {
   word-break: break-word;
+}
+
+
+.technical-data thead tr th {
+  color: var(--theme-color-1)
+}
+.technical-data tbody tr th {
+  color: var(--theme-color-1)
 }
